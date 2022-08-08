@@ -5,66 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Súbete: Tu nuevo auto te espera.</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Mansalva"
+    />
     <link rel="stylesheet" href="css/style-index.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <!-- navbar logo -->
-        <a href=""></a>
+      <div class="navbar-container">
+        <nav class="navbar">
+          <!-- navbar logo -->
+          <div class="logo-holder">
+            <a href="">
+              <h3>Súbete</h3>
+              <p>Compra venta</p>
+            </a>
+          </div>
 
-        <!-- navbar navigation links -->
-        <div class="main-nav">
-          <ul class="nav-links">
-            <li class="nav-item">
-              <a href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">¿Quiénes somos?</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">Vende con nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">Iniciar sesión</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          <!-- navbar navigation links -->
+          <div class="main-nav">
+            <ul class="nav-links">
+              <li class="nav-item">
+                <a href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">¿Quiénes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a href="#nuestros-autos">Nuestros autos</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Vende con nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Iniciar sesión</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
-      <div class="jumbotron">
-        <div class="jumbotron-info">
-          <div class="jumbotron-info-title">
-            <a href="#">
-              <span>100% OFF</span>
-              <span>Publica tu auto gratis</span>
-            </a>
-            <h1>Los mejores autos del mercado ¡Súbete al tuyo!</h1>
-            <p>
-              El sueño del auto propio ahora es posible, compra tu primer auto o
-              renueva tu actual vehiculo. Busca el auto de tus sueños sin
-              preocuparte!
-            </p>
-            <p>
-              Todos nuestros vehiculos cuentan con el sello de caludad Súbete,
-              garantizando su calidad y perfecto estado.
-            </p>
+      <div class="jumbotron-container">
+        <div class="jumbotron">
+          <div class="jumbotron-info">
+            <div class="jumbotron-info-title">
+              <a href="#">
+                <span>100% OFF</span>
+                <span>Publica tu auto gratis</span>
+              </a>
+              <h1>Los mejores autos del mercado. <br />¡Súbete al tuyo!</h1>
+              <p>
+                El sueño del auto propio ahora es posible, compra tu primer auto
+                o renueva tu actual vehiculo. Busca el auto de tus sueños sin
+                preocuparte!
+              </p>
+              <p>
+                Todos nuestros vehiculos cuentan con el sello de caludad Súbete,
+                garantizando su calidad y perfecto estado.
+              </p>
+            </div>
+            <div class="jumbotron-info-asesoria">
+              <h2>¿Necesitas asesoria?</h2>
+              <p>
+                Envíanos tu correo y un experto Súbete se pondra en contacto
+                contigo.
+              </p>
+              <form action="#">
+                <input type="email" id="correo" value="example@email.com" />
+                <input type="submit" value="Enviar" class="enviar-button" />
+              </form>
+            </div>
           </div>
-          <div class="jumbotron-info-asesoria">
-            <h2>¡Necesitas asesoria?</h2>
-            <p>
-              Envíanos tu correo y un experto Súbete se pondra en contacto
-              contigo.
-            </p>
+          <div class="jumbotron-img">
+            <img src="img/car-volume.jpg" alt="" />
           </div>
-        </div>
-        <div class="jumbotron-img">
-          <img src="img/car-volume.jpg" alt="" />
         </div>
       </div>
-      <div></div>
-      <div></div>
+      <div class="about-us">
+        <div class="about-us-main">
+          <header>
+            <h2>Líderes en compra y venta de vehículos</h2>
+            <p>
+              Súbete es el portal que necesitas. Nuestro sello de calidad
+              garantiza el perfecto estado de los vehiculos publicados para que
+              tu no te preocupes por nada.
+            </p>
+          </header>
+        </div>
+        <div class="about-us-history"></div>
+        <div class="about-us-img"></div>
+      </div>
+      <div class="gallery" id="nuestros-autos">
+        <header>
+          <h1>Nuestros autos</h1>
+          <p>Encuentra el auto de tus sueños</p>
+        </header>
+        <div class="gallery-cards">
+          <div class="card">
+            <img src="img/cars/car-1.jpg" alt="" />
+            <p>2005 BMW M3 Coupe 21 Millones</p>
+            <span>6-Speed Manual, Recent Major Service, Western-Owned</span>
+          </div>
+          <div class="card">
+            <img src="img/cars/car-2.jpg" alt="" />
+            <p>2019 Ford Mustang Shelby GT350 49 Millones</p>
+            <span>~6,800 Miles, 5.2-Liter Voodoo V8, 6-Speed Manual</span>
+          </div>
+          <div class="card">
+            <img src="img/cars/car-3.jpg" alt="" />
+            <p>2004 Ford F-150 Lariat 14 Millones</p>
+            <span>1 Owner, V8 Power, ~54,500 Miles, Some Modifications</span>
+          </div>
+          <div class="card">
+            <img src="img/cars/car-4.jpg" alt="" />
+            <p>2012 Mini Cooper S 10 Millones</p>
+            <span
+              >1 Owner, 6-Speed Manual, ~39,100 Miles, Mostly Unmodified</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="contacto"></div>
     </main>
   </body>
 </html>

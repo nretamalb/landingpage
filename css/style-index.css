@@ -2,19 +2,74 @@
 #262e57
 #f7a007
 #c32b42
-#a5e9e8 */
+#a5e9e8 
+
+------------
+#e9e581
+#de1b1b
+#646f6f
+#f9f3c5
+#87aab9
+*/
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Helvetica", "Times New Roman", Times, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*---Barra de navegacion---*/
+.navbar-container {
+  width: 100vw;
+  background-color: #262e57;
 }
 .navbar {
-  width: 100%;
+  max-width: 1440px;
   /*height: 80px;*/
   padding: 0;
   margin: 0 auto;
   background-color: #262e57;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+/*---Logo parte izquierda---*/
+.logo-holder {
+  text-align: center;
+  align-items: center;
+  margin-right: auto;
+}
+
+.logo-holder a {
+  text-decoration: none;
+}
+
+.logo-holder h3 {
+  color: #de1b1b;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 0.65;
+  font-family: "Lobster", cursive;
+  padding: 5px;
+}
+
+.logo-holder p {
+  font-size: 16px;
+  margin-left: 50px;
+  color: whitesmoke;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-style: italic;
+  font-family: "Mansalva", cursive;
+}
+
+/*---Links barra navegacion---*/
+.main-nav {
   display: flex;
   justify-content: end;
   flex-direction: row;
@@ -23,34 +78,40 @@
 .nav-links {
   list-style: none;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .nav-item a {
   display: inline-block;
   padding: 25px 15px;
   text-decoration: none;
-  color: #f7a007;
-  font-weight: 800;
+  color: whitesmoke;
+  font-weight: 600;
   font-size: 20px;
 }
 
+/*---Contenido pagina---*/
+
 main {
-  width: 100%;
+  width: 100vw;
   display: block;
 }
 
+.jumbotron-container {
+  width: 100vw;
+  background-color: #262e57;
+}
 .jumbotron {
-  max-width: 100vw;
+  max-width: 1440px;
   display: grid;
   gap: 10px;
   padding: 15px 15px;
   grid-template-columns: 1fr 1fr;
   background-color: #262e57;
+  margin: 0 auto;
 }
 
 .jumbotron-info {
-  width: 50vw;
   margin: 0 auto;
   display: grid;
   gap: 5px;
@@ -58,7 +119,7 @@ main {
   color: white;
 }
 .jumbotron-info-title {
-  padding: 50px 0rem;
+  padding: 2rem 0;
 }
 .jumbotron-info-title a {
   text-decoration: none;
@@ -66,6 +127,7 @@ main {
   background-color: #f7a007;
   padding: 5px 10px;
   border-radius: 15px;
+  margin-bottom: 2rem;
 }
 
 .jumbotron-info-title span {
@@ -74,13 +136,97 @@ main {
   color: white;
 }
 
+.jumbotron-info-title h1 {
+  font-size: 50px;
+  line-height: 100%;
+  padding-bottom: 1rem;
+}
+
+.jumbotron-info-title p {
+  font-size: 18px;
+}
+
+.jumbotron-info-asesoria h2,
+.jumbotron-info-asesoria p {
+  padding-bottom: 1rem;
+}
+
+#correo {
+  width: 50%;
+  height: 1.5rem;
+  border-width: 1px;
+  font-size: 16px;
+}
+
+.enviar-button {
+  padding: 5px 15px;
+  background-color: #f7a007;
+  color: whitesmoke;
+  border-color: #f7a007;
+  border-width: 1px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: none;
+}
+
 .jumbotron-img {
-  width: 50vw;
+  display: flex;
 }
 
 .jumbotron-img img {
   width: 95%;
-  height: auto;
+  height: 95%;
   margin: 0 auto;
   object-fit: fill;
+  border-radius: 1.5%;
+}
+
+.gallery {
+  background-color: #;
+}
+
+.gallery header {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
+
+.gallery h1 {
+  font-family: "Lobster", cursive;
+  color: #de1b1b;
+  font-size: 50px;
+}
+
+.gallery header p {
+  font-size: 24px;
+}
+.gallery-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 0.5fr 1fr;
+  margin: 0 1em;
+  /*box-shadow: 0 0 5px black;*/
+  /* border-radius: 5px; */
+}
+
+.card img {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* .card p,
+.card span {
+  padding: 0 5px;
+} */
+
+.card p {
+  font-weight: 700;
 }
