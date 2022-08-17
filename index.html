@@ -30,13 +30,13 @@
                 <a href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a href="#">¿Quiénes somos?</a>
+                <a href="#quienes-somos">¿Quiénes somos?</a>
               </li>
               <li class="nav-item">
                 <a href="#nuestros-autos">Nuestros autos</a>
               </li>
               <li class="nav-item">
-                <a href="#">Vende con nosotros</a>
+                <a href="#">Contacto</a>
               </li>
               <li class="nav-item">
                 <a href="#">Iniciar sesión</a>
@@ -83,7 +83,7 @@
           </div>
         </div>
       </div>
-      <div class="about-us">
+      <div class="about-us" id="quienes-somos">
         <div class="about-us-main">
           <div class="bg-opacity">
             <div>
@@ -113,37 +113,60 @@
           <div class="about-us-img"></div>
         </div>
       </div>
-      <div class="gallery" id="nuestros-autos">
-        <header>
-          <h1>Nuestros autos</h1>
-          <p>Encuentra el auto de tus sueños</p>
-        </header>
-        <div class="gallery-cards">
-          <div class="card">
-            <img src="img/cars/car-1.jpg" alt="" />
-            <p>2005 BMW M3 Coupe 21 Millones</p>
-            <span>6-Speed Manual, Recent Major Service, Western-Owned</span>
-          </div>
-          <div class="card">
-            <img src="img/cars/car-2.jpg" alt="" />
-            <p>2019 Ford Mustang Shelby GT350 49 Millones</p>
-            <span>~6,800 Miles, 5.2-Liter Voodoo V8, 6-Speed Manual</span>
-          </div>
-          <div class="card">
-            <img src="img/cars/car-3.jpg" alt="" />
-            <p>2004 Ford F-150 Lariat 14 Millones</p>
-            <span>1 Owner, V8 Power, ~54,500 Miles, Some Modifications</span>
-          </div>
-          <div class="card">
-            <img src="img/cars/car-4.jpg" alt="" />
-            <p>2012 Mini Cooper S 10 Millones</p>
-            <span
-              >1 Owner, 6-Speed Manual, ~39,100 Miles, Mostly Unmodified</span
-            >
+      <div class="gallery-container">
+        <div class="gallery" id="nuestros-autos">
+          <header>
+            <h1>Nuestros autos</h1>
+            <p>Encuentra el auto de tus sueños</p>
+          </header>
+          <div class="gallery-cards">
+            <div class="card">
+              <img src="img/cars/car-1.jpg" alt="" />
+              <p>2005 BMW M3 Coupe 21 Millones</p>
+              <span>6-Speed Manual, Recent Major Service, Western-Owned</span>
+            </div>
+            <div class="card">
+              <img src="img/cars/car-2.jpg" alt="" />
+              <p>2019 Ford Mustang Shelby GT350 49 Millones</p>
+              <span>~6,800 Miles, 5.2-Liter Voodoo V8, 6-Speed Manual</span>
+            </div>
+            <div class="card">
+              <img src="img/cars/car-3.jpg" alt="" />
+              <p>2004 Ford F-150 Lariat 14 Millones</p>
+              <span>1 Owner, V8 Power, ~54,500 Miles, Some Modifications</span>
+            </div>
+            <div class="card">
+              <img src="img/cars/car-4.jpg" alt="" />
+              <p>2012 Mini Cooper S 10 Millones</p>
+              <span
+                >1 Owner, 6-Speed Manual, ~39,100 Miles, Mostly Unmodified</span
+              >
+            </div>
           </div>
         </div>
       </div>
-      <div class="contacto"></div>
+      <div class="contacto-container">
+        <div class="contacto">
+          <h2>Contacto</h2>
+          <form action="#" class="form-contacto">
+            <label for="">Nombre</label>
+            <input type="text" />
+            <label for="">Correo</label>
+            <input type="text" />
+            <label for="">Comentarios</label>
+            <textarea
+              name="coments"
+              id="comentarios"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input type="button" value="Enviar" />
+          </form>
+        </div>
+        <div class="img-contacto-container">
+          <img src="/img/Car-Sales.jpg" alt="" class="img-contacto" />
+        </div>
+      </div>
     </main>
   </body>
 </html>
