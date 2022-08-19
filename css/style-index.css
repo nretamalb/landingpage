@@ -24,7 +24,7 @@ html {
 
 /*---Barra de navegacion---*/
 .navbar-container {
-  width: 100vw;
+  width: 100%;
   background-color: #262e57;
 }
 .navbar {
@@ -90,15 +90,33 @@ html {
   font-size: 20px;
 }
 
+@media (max-width: 900px) {
+  .nav-item a {
+    font-size: 14px;
+  }
+
+  .logo-holder h3 {
+    font-size: 40px;
+  }
+
+  .logo-holder p {
+    font-size: 14px;
+  }
+
+  .navbar {
+    margin: 0 auto;
+  }
+}
+
 /*---Contenido pagina---*/
 
 main {
-  width: 100vw;
+  width: 100%;
   display: block;
 }
 
 .jumbotron-container {
-  width: 100vw;
+  width: 100%;
   background-color: #262e57;
 }
 .jumbotron {
@@ -109,6 +127,13 @@ main {
   grid-template-columns: 1fr 1fr;
   background-color: #262e57;
   margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .jumbotron {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .jumbotron-info {
@@ -246,7 +271,6 @@ main {
 .card {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 4fr 0.5fr 1fr;
   margin: 0 1em;
   /*box-shadow: 0 0 5px black;*/
   /* border-radius: 5px; */
@@ -274,7 +298,7 @@ main {
 }
 .contacto {
   max-width: 1440px;
-  margin: 20px auto;
+  margin: 10rem auto;
   display: block;
 }
 
@@ -299,10 +323,11 @@ main {
   height: 5rem;
 }
 .img-contacto-container {
+  margin: 10rem 0;
 }
 .img-contacto {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
   border-radius: 5px;
   margin: 20px auto;
