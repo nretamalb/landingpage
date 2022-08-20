@@ -263,14 +263,26 @@ main {
   font-size: 24px;
 }
 .gallery-cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; */
+}
+
+@media (max-width: 900px) {
+  .gallery-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 2rem;
+  }
 }
 
 .card {
   display: grid;
   grid-template-columns: 1fr;
+  /* grid-template-rows: 4fr 1fr 1fr; */
   margin: 0 1em;
   /*box-shadow: 0 0 5px black;*/
   /* border-radius: 5px; */
@@ -279,6 +291,7 @@ main {
 .card img {
   object-fit: contain;
   width: 100%;
+  height: auto;
   border-radius: 5px;
 }
 
@@ -291,10 +304,17 @@ main {
   font-weight: 700;
 }
 
+@media (max-width: 900px) {
+  .card {
+    max-width: 100%;
+  }
+}
+
 .contacto-container {
   height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 0 1rem;
 }
 .contacto {
   max-width: 1440px;
